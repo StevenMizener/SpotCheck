@@ -11,7 +11,7 @@ namespace SpotCheckUnitTests
         // File paths for dummy test files NOTE: REPLACE WITH LOCAL PATHS BEFORE TESTING
         public const string SRC_FILE = @"C:\Test.txt"; 
         public const string TRG_FILE = @"C:\Test1.txt";
-        public const string BATCH_PATH = @"C:\BatchTest001";
+        public const string BATCH_PATH = @"C:\Users\Saulgoodman\Desktop\BatchTest";
         [TestMethod]
         public void SoftSpotPerformanceTest()
         {

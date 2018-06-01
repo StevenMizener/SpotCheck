@@ -1,4 +1,10 @@
-﻿using System;
+﻿////////////////////////////////////////////////////////////////////////////////////////////////////
+// file:	Program.cs
+//
+// summary:	Implements the program class
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,20 +12,38 @@ using System.Threading.Tasks;
 
 namespace SpotCheck
 {
-    /// <summary>**********************************************************************************************************
-    ///  Application Name: SoftSpot Command Console
-    ///  Description: A simple console application that provides commandline input/output to highly performance optimized, 
-    ///  efficient and accurate file content duplication checking algorithms.   
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    /// <summary>
+    /// **********************************************************************************************************
+    /// Application Name: SoftSpot Command Console Description: A simple console application that
+    /// provides commandline input/output to highly performance optimized, efficient and accurate
+    /// file content duplication checking algorithms.
     /// *******************************************************************************************************************
-    ///  All source code Copyright 2018, Steven L. Taylor (Blacksmith Software Works)
-    /// **********************************************************************************************************</summary>
+    /// All source code Copyright 2018, Steven L. Taylor (Blacksmith Software Works)
+    /// **********************************************************************************************************.
+    /// </summary>
+    ///
+    /// <remarks>   Saulgoodman, 5/31/2018. </remarks>
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+
     class Program
     {
         #region Command Line Constants
+        /// <summary>   The soft spot. </summary>
         private const string SOFT_SPOT = "SoftSpot";
+        /// <summary>   The batch spot. </summary>
         private const string BATCH_SPOT = "BatchSpot";
+        /// <summary>   The help me. </summary>
         private const string HELP_ME = "HelpMe";
         #endregion
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Main entry-point for this application. </summary>
+        ///
+        /// <remarks>   Saulgoodman, 5/31/2018. </remarks>
+        ///
+        /// <param name="args"> An array of command-line argument strings. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         static void Main(string[] args)
         {
@@ -35,6 +59,13 @@ namespace SpotCheck
                 ReadInput();
             }
         }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Reads the input. </summary>
+        ///
+        /// <remarks>   Saulgoodman, 5/31/2018. </remarks>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         private static void ReadInput()
         {
             string input;
@@ -48,6 +79,17 @@ namespace SpotCheck
                 }
             } while (input != "");
         }
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+        /// <summary>   Process the input described by input. </summary>
+        ///
+        /// <remarks>   Saulgoodman, 5/31/2018. </remarks>
+        ///
+        /// <exception cref="Exception">    Thrown when an exception error condition occurs. </exception>
+        ///
+        /// <param name="input">    The input. </param>
+        ////////////////////////////////////////////////////////////////////////////////////////////////////
+
         private static void ProcessInput(string input)
         {
             try

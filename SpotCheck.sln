@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotCheckUnitTests", "Black
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotCheck", "SpotCheck\SpotCheck.csproj", "{DD1868A1-935C-4421-8F94-08B142839070}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exe", "exe", "{4AF6238D-78D0-4F0E-9CAB-2BE30106063C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\SpotCheck Console.zip = ..\..\..\Desktop\SpotCheck Console.zip
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
